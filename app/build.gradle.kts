@@ -1,6 +1,8 @@
 plugins {
     id ("com.android.application")
     id ("org.jetbrains.kotlin.android")
+    id ("kotlin-kapt")
+    id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -63,4 +65,8 @@ dependencies {
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.24.10-beta")
 
     implementation("androidx.core:core-splashscreen:1.0.0")
+
+    val hiltVersion = "2.44"
+    implementation("com.google.dagger:hilt-android:$hiltVersion")
+    kapt("com.google.dagger:hilt-android-compiler:$hiltVersion")
 }
