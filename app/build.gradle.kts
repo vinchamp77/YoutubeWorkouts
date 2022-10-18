@@ -71,8 +71,4 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:$hiltVersion")
     // for hiltViewModel()
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
-
-    val media3Version="1.0.0-beta02"
-    implementation("androidx.media3:media3-exoplayer:$media3Version")
-    implementation("androidx.media3:media3-ui:$media3Version")
 }
