@@ -5,3 +5,4 @@
 
 ## Tech Stack
 - Jetpack Compose
+- Hilt DI Framework
