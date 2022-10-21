@@ -29,10 +29,11 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun setupSplashScreen() {
+
         var keepSplashScreenOn = true
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                delay(2000)
+                delay(1000)
                 keepSplashScreenOn = false
             }
         }
