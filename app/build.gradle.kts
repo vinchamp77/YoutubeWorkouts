@@ -3,6 +3,7 @@ plugins {
     id ("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id ("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 android {
@@ -47,6 +48,15 @@ android {
             excludes.add("/META-INF/{AL2.0,LGPL2.1}")
         }
     }
+
+    applicationVariants.all {
+        kotlin.sourceSets {
+            getByName(name) {
+                kotlin.srcDir("build/generated/ksp/$name/kotlin")
+            }
+        }
+    }
+
     namespace = "vtsen.hashnode.dev.youtubeworkout"
 }
 
@@ -73,4 +83,8 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     implementation("io.coil-kt:coil-compose:2.1.0")
+
+    val composeDestinationsVersion = "1.7.23-beta"
+    implementation("io.github.raamcosta.compose-destinations:core:$composeDestinationsVersion")
+    ksp("io.github.raamcosta.compose-destinations:ksp:$composeDestinationsVersion")
 }
