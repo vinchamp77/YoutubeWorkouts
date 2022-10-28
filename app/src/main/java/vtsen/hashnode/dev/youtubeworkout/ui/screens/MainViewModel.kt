@@ -11,9 +11,9 @@ class MainViewModel @Inject constructor(
 ): ViewModel() {
 
     private val youtubeIds = mutableListOf(
-        "abc",
-        "abc"
-    ).toList()
+        "rI_6l992GrA",
+        "Urx4gMA2-Kw"
+    ).toList().shuffled()
 
     private val _youtubeIdsStateFlow = MutableStateFlow(youtubeIds)
     val youtubeIdsStateFlow = _youtubeIdsStateFlow.asStateFlow()
