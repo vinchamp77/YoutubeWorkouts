@@ -72,17 +72,16 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
     debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
 
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.24.10-beta")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 
     implementation("androidx.core:core-splashscreen:1.0.0")
 
     val hiltVersion = "2.44"
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     kapt("com.google.dagger:hilt-android-compiler:$hiltVersion")
-    // for hiltViewModel()
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0") // for hiltViewModel()
 
-    implementation("io.coil-kt:coil-compose:2.1.0")
+    implementation("io.coil-kt:coil-compose:2.2.2")
 
     val composeDestinationsVersion = "1.7.23-beta"
     implementation("io.github.raamcosta.compose-destinations:core:$composeDestinationsVersion")
