@@ -21,8 +21,4 @@ class MainViewModel @Inject constructor(
     init {
 
     }
-
-    override fun onCleared() {
-        super.onCleared()
-    }
 }
