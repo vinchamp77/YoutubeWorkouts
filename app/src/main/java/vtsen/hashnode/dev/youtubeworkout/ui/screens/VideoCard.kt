@@ -23,9 +23,7 @@ fun VideoCard(youtubeId: String) {
 
     Card(
         modifier = Modifier
-            .padding(PaddingSmall)
-        ,
-        //shape = RoundedCornerShape(5)
+            .padding(PaddingSmall),
     ) {
 
         AsyncImage(

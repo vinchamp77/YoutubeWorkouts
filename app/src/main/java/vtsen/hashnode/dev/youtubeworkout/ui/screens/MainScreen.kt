@@ -25,7 +25,8 @@ fun MainScreen(viewModel: MainViewModel = hiltViewModel()) {
                     containerColor = MaterialTheme.colorScheme.primaryContainer
                 )
             )
-        }
+        },
+        containerColor = MaterialTheme.colorScheme.primaryContainer
     ) { contentPadding ->
         VideosScreen(viewModel, contentPadding)
     }
