@@ -7,10 +7,11 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.ramcosta.composedestinations.DestinationsNavHost
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import vtsen.hashnode.dev.youtubeworkout.ui.screens.MainScreen
+import vtsen.hashnode.dev.youtubeworkout.ui.screens.NavGraphs
 import vtsen.hashnode.dev.youtubeworkout.ui.theme.YoutubeWorkoutAppTheme
 
 @AndroidEntryPoint
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             YoutubeWorkoutAppTheme {
-                MainScreen()
+                DestinationsNavHost (navGraph = NavGraphs.root)
             }
         }
     }
