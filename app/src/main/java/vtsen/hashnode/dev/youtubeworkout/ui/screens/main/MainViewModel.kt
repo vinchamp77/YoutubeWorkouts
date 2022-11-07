@@ -1,4 +1,4 @@
-package vtsen.hashnode.dev.youtubeworkout.ui.screens
+package vtsen.hashnode.dev.youtubeworkout.ui.screens.main
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -12,7 +12,8 @@ class MainViewModel @Inject constructor(
 
     private val youtubeIds = mutableListOf(
         "rI_6l992GrA",
-        "Urx4gMA2-Kw"
+        "Urx4gMA2-Kw",
+        "Urx4gMA2-Kw",
     ).toList().shuffled()
 
     private val _youtubeIdsStateFlow = MutableStateFlow(youtubeIds)
