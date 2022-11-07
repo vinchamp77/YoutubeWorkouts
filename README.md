@@ -6,3 +6,6 @@
 ## Tech Stack
 - Jetpack Compose
 - Hilt DI Framework
+- Material 3
+- Compose Destination
+- Coil Compose
