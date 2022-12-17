@@ -87,4 +87,6 @@ dependencies {
     val composeDestinationsVersion = "1.7.23-beta"
     implementation("io.github.raamcosta.compose-destinations:core:$composeDestinationsVersion")
     ksp("io.github.raamcosta.compose-destinations:ksp:$composeDestinationsVersion")
+
+    implementation("com.github.vinchamp77:buildutils:0.0.3")
 }

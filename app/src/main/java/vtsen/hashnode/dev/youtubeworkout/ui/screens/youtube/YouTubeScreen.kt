@@ -1,4 +1,4 @@
-package vtsen.hashnode.dev.youtubeworkout.ui.screens
+package vtsen.hashnode.dev.youtubeworkout.ui.screens.youtube
 
 import androidx.compose.runtime.Composable
 import com.ramcosta.composedestinations.annotation.Destination
