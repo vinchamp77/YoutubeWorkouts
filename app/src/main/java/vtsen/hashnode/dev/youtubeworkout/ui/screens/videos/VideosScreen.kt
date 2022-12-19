@@ -13,8 +13,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.annotation.RootNavGraph
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
+import vtsen.hashnode.dev.youtubeworkout.ui.screens.destinations.YouTubeScreenDestination
 import vtsen.hashnode.dev.youtubeworkout.ui.screens.main.MainViewModel
-import vtsen.hashnode.dev.youtubeworkout.ui.screens.main.VideoCard
 
 @RootNavGraph(start = true)
 @Destination
@@ -32,7 +32,13 @@ fun VideosScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         items(items = youtubeIds) { youtubeId ->
-            VideoCard(youtubeId)
+            VideoCard(
+                youtubeId,
+                onClick =  {
+                    navigator.navigate(YouTubeScreenDestination(youtubeId))
+                },
+
+            )
         }
     }
 }

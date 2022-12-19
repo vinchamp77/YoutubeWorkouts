@@ -1,9 +1,10 @@
-package vtsen.hashnode.dev.youtubeworkout.ui.screens.main
+package vtsen.hashnode.dev.youtubeworkout.ui.screens.videos
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -16,12 +17,14 @@ import coil.request.ImageRequest
 import vtsen.hashnode.dev.youtubeworkout.R
 import vtsen.hashnode.dev.youtubeworkout.ui.theme.PaddingSmall
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun VideoCard(youtubeId: String) {
+fun VideoCard(youtubeId: String, onClick: () -> Unit) {
 
     val imageUrl = remember {"https://img.youtube.com/vi/" + youtubeId + "/0.jpg" }
 
     Card(
+        onClick = onClick,
         modifier = Modifier
             .padding(PaddingSmall),
     ) {
@@ -47,5 +50,6 @@ fun VideoCard(youtubeId: String) {
 private fun VideoCardPreview() {
     VideoCard(
         youtubeId = "rI_6l992GrA",
+        onClick = {}
     )
 }

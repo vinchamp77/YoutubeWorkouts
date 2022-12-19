@@ -5,5 +5,5 @@ import com.ramcosta.composedestinations.annotation.Destination
 
 @Destination
 @Composable
-fun YouTubeScreen (){
+fun YouTubeScreen (youtubeId: String){
 }
