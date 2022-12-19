@@ -23,7 +23,7 @@ fun MainScreen() {
                         text = stringResource(R.string.app_name),
                     )
                 },
-                colors = TopAppBarDefaults.smallTopAppBarColors(
+                colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer
                 )
             )
