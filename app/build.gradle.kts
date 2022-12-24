@@ -3,7 +3,6 @@ plugins {
     id ("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
-    id ("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 android {
@@ -83,10 +82,6 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0") // for hiltViewModel()
 
     implementation("io.coil-kt:coil-compose:2.2.2")
-
-    val composeDestinationsVersion = "1.7.23-beta"
-    implementation("io.github.raamcosta.compose-destinations:core:$composeDestinationsVersion")
-    ksp("io.github.raamcosta.compose-destinations:ksp:$composeDestinationsVersion")
 
     implementation("com.github.vinchamp77:buildutils:0.0.3")
 }

@@ -11,7 +11,7 @@ class MainViewModel @Inject constructor(
 ): ViewModel() {
 
     private val youtubeIds = mutableListOf(
-        "rI_6l992GrA",
+        "rI_6l992GrA", //Mad Fit - 30 MIN FULL BODY HIIT (No Jumping + No Equipment)
         "Urx4gMA2-Kw",
         "Urx4gMA2-Kw",
     ).toList().shuffled()
@@ -19,7 +19,14 @@ class MainViewModel @Inject constructor(
     private val _youtubeIdsStateFlow = MutableStateFlow(youtubeIds)
     val youtubeIdsStateFlow = _youtubeIdsStateFlow.asStateFlow()
 
+    private val _uiStateFlow = MutableStateFlow<UiState>(UiState.Invalid)
+    val uiStateFlow = _uiStateFlow.asStateFlow()
+
     init {
 
+    }
+
+    fun setUiState(uiState: UiState) {
+        _uiStateFlow.value = uiState
     }
 }
