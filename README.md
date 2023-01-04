@@ -1,4 +1,5 @@
 # Youtube Workout App
+A list of random 30-minute workouts from YouTube. 
 
 ## Requirements
 - Android Studio Dolphin or later
@@ -7,5 +8,5 @@
 - Jetpack Compose
 - Hilt DI Framework
 - Material 3
-- Compose Destination
 - Coil Compose
+- Build Utils (Own Library)
