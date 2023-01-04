@@ -72,7 +72,7 @@ dependencies {
 
     implementation("androidx.compose.material3:material3:1.1.0-alpha03")
 
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.28.0")
 
     implementation("androidx.core:core-splashscreen:1.0.0")
 
@@ -83,5 +83,7 @@ dependencies {
 
     implementation("io.coil-kt:coil-compose:2.2.2")
 
-    implementation("com.github.vinchamp77:buildutils:0.0.3")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.3.2")
+
+    implementation("com.github.vinchamp77:buildutils:0.0.5")
 }
