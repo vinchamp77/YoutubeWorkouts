@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">30-minute Workouts</string>
+    <string name="app_name">Youtube Workouts</string>
+    <string name="app_label">Workouts</string>
+    <string name="thirty_minute_workouts">30-minute Workouts</string>
     <string name="no_youtube_app">No Youtube App Found!</string>
 </resources>

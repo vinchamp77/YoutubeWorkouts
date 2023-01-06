@@ -29,7 +29,7 @@ fun MainScreen(viewModel: MainViewModel = hiltViewModel()) {
             CenterAlignedTopAppBar(
                 title = {
                     Text(
-                        text = stringResource(R.string.app_name),
+                        text = stringResource(R.string.thirty_minute_workouts),
                         style = MaterialTheme.typography.headlineLarge,
                     )
                 },
