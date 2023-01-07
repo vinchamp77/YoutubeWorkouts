@@ -1,5 +1,7 @@
-# Youtube Workout App
+# YouTube Workouts App
 A list of random 30-minute workouts from YouTube. 
+
+![](screenshots/Screenshot_01.png)
 
 ## Requirements
 - Android Studio Dolphin or later
