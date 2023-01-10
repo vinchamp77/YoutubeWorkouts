@@ -11,4 +11,5 @@ A list of random 30-minute workouts from YouTube.
 - Hilt DI Framework
 - Material 3
 - Coil Compose
+- View Model
 - Build Utils (Own Library)
