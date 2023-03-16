@@ -13,3 +13,6 @@ A list of random 30-minute workouts from YouTube.
 - Coil Compose
 - View Model
 - Build Utils (Own Library)
+
+## Articles
+- [How to Implement Custom Fonts using Downloadable Google Fonts?](https://vtsen.hashnode.dev/how-to-implement-custom-fonts-using-downloadable-google-fonts)
